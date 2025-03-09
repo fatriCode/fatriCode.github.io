@@ -2,7 +2,6 @@ function clg(...p) { console.log(...p)};
 
 
 const gridEl1 = document.querySelector('.player1grid');
-const gridEl2 = document.querySelector('.player2grid');
 const btnEl = document.getElementById('btn');
 
 btnEl.addEventListener('click', newPattern)
@@ -32,7 +31,7 @@ function checkFourColorMax(p1){
 }
 
 function newPattern(){
-    gridEl1.innerHTML = '';   gridEl2.innerHTML = '';
+    gridEl1.innerHTML = '';  
     
     randomizePattern(); 
 
@@ -42,13 +41,6 @@ function newPattern(){
         
         newEl.style.backgroundColor = colors[pattern[i]];
         gridEl1.appendChild(newEl);
-    }
-
-    for (let i=8; i>=0; i--){
-        let newEl = document.createElement('div');
-        newEl.classList.add('box');
-        newEl.style.backgroundColor = colors[pattern[i]];
-        gridEl2.appendChild(newEl);
     }
 }
 
