@@ -24,9 +24,9 @@ body{
     gap: 20px;
 }
 
-#btn{ width:300px; height:40px;
+#btn{ width:260px; height:70px;
      background-color: brown; 
-     margin: 40px 0;
+     margin: 50px 0;
     color: whitesmoke;
     font-size: 1.5rem;
 }
