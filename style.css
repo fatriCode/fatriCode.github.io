@@ -1,0 +1,40 @@
+
+
+
+*,*::before,*::after{box-sizing:border-box;}
+
+body{
+    width: 100vw;
+    background-color: antiquewhite;
+    display:flex;
+    flex-direction: column;
+    align-items: center;     
+    
+} 
+
+.player1grid{
+    border: 2px dashed gray;
+    width: 200px;   
+    height:  200px;
+    display:grid;
+    
+    grid-template-columns: 1fr 1fr 1fr;   
+    gap: 10px;
+}
+
+.divider{ width:400px; height:20px; background-color: brown; margin: 40px 0;}
+
+.player2grid{
+    border: 2px dashed gray;
+    width: 200px;   
+    height:  200px;
+    display:grid;
+    
+    grid-template-columns: 1fr 1fr 1fr;   
+    gap: 10px;
+}
+
+.box{
+    background-color: aqua;
+    
+}
