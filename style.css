@@ -1,40 +1,88 @@
 
 
-
-*,*::before,*::after{box-sizing:border-box;}
+*{box-sizing: border-box;}
 
 body{
-    width: 100vw;
-    height: 100vh;
-    background-color: antiquewhite;
-    display:flex;
-    flex-direction: column;
-    align-items: center;   
-    justify-content: center;  
-    
-} 
-
-.player1grid{
-    border: 2px dashed gray;
-    width: 300px;   
-    height:  300px;
-    display:grid;
-    
-    grid-template-columns: 1fr 1fr 1fr;   
-    gap: 20px;
+  min-height:100vh;
+  width:100vw;
+  background-color: slategrey;
+  display:flex;
+  flex-direction:column;
+  justify-content: center; align-items: center;
 }
 
-#btn{ width:260px; height:70px;
-     background-color: brown; 
-     margin: 50px 0;
-    color: whitesmoke;
-    font-size: 1.5rem;
+.uppersection{
+  display:flex;
+  justify-content: center; align-items: center;
+  border: 2px dashed orange;
+  /* background-color: bisque; */
 }
-#btn:hover{opacity: 0.7}
-#btn:active{color: black;}
+
+.midsection{
+  padding:0;
+  display:flex; 
+  justify-content: space-between; 
+  align-items: center;
+  
+}
+p{margin:20px; font-size:1.2rem; color: white; text-shadow: 2px 1px 3px black;}
+button{
+  margin:20px;    padding:0 10px;
+  background-color: antiquewhite;
+  height: 40px;
+  font-size:1.1rem;
+  box-shadow: 4px 4px 8px black;
+}  
+span{
+  background-color: whitesmoke; 
+  font-weight: 700;
+  padding: 0 10px;
+  color: black;
+  text-shadow:none;
+}
+
+.goalBox{
+  width: 50px; 
+  height: 50px;
+  color: slategray;
+  background-color: black;
+  border: 2px solid aqua;
+
+}
+
+#goal{
+  width: 155px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  
+  justify-items:center;
+  
+  margin: 20px;
+  gap: 1px;
+}
 
 .box{
-    background-color: aqua;
-    box-shadow: 2px 5px 5px black;
-    
+  min-width:40px; 
+  min-height:40px;
+  color: slategray;
+  background-color: black;
+  border: 2px solid aqua;
 }
+
+#cntnr{
+  width: 350px;
+  height: 350px;
+  display:grid;
+  grid-template-columns: repeat(5, 1fr);
+  /* gap: 3px; */
+  /* grid-template-columns: 50px 50px 50px 50px 50px; */
+  /* grid-template-rows: 5; */
+}
+
+#b0{background-color: black;}
+#b5,#b10,#b15,#b20{background-color: white;}
+#b1,#b2,#b3,#b4{background-color: red;}
+#b6,#b7,#b8,#b9{background-color: orange;}
+#b11,#b12,#b13,#b14{background-color: yellow;}
+#b16,#b17,#b18,#b19{background-color: green;}
+#b21,#b22,#b23,#b24{background-color: blue;}
